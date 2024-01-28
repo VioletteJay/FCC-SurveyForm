@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="form">
+    <h1 id="title">Cat Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Name*
+          <input id="name" type="text" name="name" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label">
+          Email*
+          <input id="email" type="email" name="email" placeholder="Enter your Email" required />
+        </label>
+        <label for="number" id="number-label">
+          Age
+          <input id="number" type="number" name="number" min="0" max="100" placeholder="Enter your age" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" id="dropdown-label">
+          Do you like cats ?
+          <select id="dropdown" name="dropdown">
+            <option value="">Select a response</option>
+            <option value="1">Of course</option>
+            <option value="2">Obviously</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which cat color is your favorite ?</legend>
+        <label for="orange-color" id="orange-color-label">
+          <input id="orange-color" type="radio" name="cat-color" value="Orange" />
+          Orange
+        </label>
+        <label for="white-color" id="white-color-label">
+          <input id="white-color" type="radio" name="cat-color" value="White" />
+          White
+        </label>
+        <label for="black-color" id="black-color-label">
+          <input id="black-color" type="radio" name="cat-color" value="Black" />
+          Black
+        </label>
+        <label for="other-color" id="other-color-label">
+          <input id="other-color" type="radio" name="cat-color" value="Other" />
+          Other
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which activity do you prefer with your cat ?</legend>
+        <label for="chill-activity" id="chill-activity-label">
+          <input id="chill-activity" type="checkbox" name="cat-activity" value="Chilling" />
+          Chilling
+        </label>
+        <label for="play-activity" id="play-activity-label">
+          <input id="play-activity" type="checkbox" name="cat-activity" value="Playing" />
+          Playing
+        </label>
+        <label for="sleep-activity" id="sleep-activity-label">
+          <input id="sleep-activity" type="checkbox" name="cat-activity" value="Sleeping" />
+          Sleeping
+        </label>
+        <label for="outside-activity" id="outside-activity-label">
+          <input id="outside-activity" type="checkbox" name="cat-activity" value="Going outside" />
+          Going outside
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="cat-life" id="cat-life-label">
+          Tell us a bit more about your cat:
+          <textarea id="cat-life" name="cat-life" rows="3" cols="30"
+            placeholder="My cat's name is Sweetie, he likes tuna..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+
+</html>
